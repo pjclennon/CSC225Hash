@@ -46,6 +46,9 @@ Now complete `resize()` and add the load-factor check near the start of `insert(
 
 Test each of the three methods with both hash functions. Also test an absent value, a duplicate, and a resize. In this README or a separate `NOTES.md`, write 2–3 sentences answering: **Why can't you copy values into the same positions when the table grows?**
 
+
+"When expanding a hash table, the capacity of the hash table increases, and as a result the hash value for many keys will be changed as well. Therefore, the keys that used to be in the right spot within the hash table before are no longer in their right place. Rehashing and inserting the value will fix the problem."
+
 After each milestone:
 
 ```bash
